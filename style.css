@@ -1,0 +1,408 @@
+body {
+  margin: 0;
+  background-color: #18191a;
+  font-family: sans-serif;
+  min-height: 100vh;
+  z-index: -3;
+  position: relative;
+  color: #e4e6eb;
+}
+header {
+  display: flex;
+  flex-flow: row nowrap;
+  align-content: center;
+  justify-content: space-between;
+  position: fixed;
+  width: 100vw;
+  height: 56px;
+  background-color: #242526;
+}
+header > img {
+  margin: 8px 16px;
+  height: 40px;
+  width: 40px;
+}
+header .menu .prf img {
+  border-radius: 50%;
+  height: 28px;
+  width: 28px;
+  margin: 14px;
+}
+header .menu .prf > span {
+  color: white;
+  font-size: 15px;
+  line-height: 56px;
+  font-weight: 600;
+}
+header .menu .prf {
+  display: flex;
+  align-content: center;
+  flex-flow: row nowrap;
+}
+header .menu .prf i {
+  color: white;
+  font-size: 24px;
+  height: 40px;
+  width: 40px;
+  margin: 8px 20px 8px 0;
+  line-height: 33px;
+  text-align: center;
+  background-color: #3a3b3c;
+  border-radius: 50%;
+  cursor: pointer;
+}
+header .menu .prf i:hover {
+  background-color: #4e4f50;
+}
+header .menu .prf input {
+  visibility: hidden;
+}
+header .menu .prf label .drpcontent {
+  height: 228px;
+  width: 360px;
+  background-color: #242526;
+  display: none;
+  position: absolute;
+  top: 100%;
+  right: 20px;
+  border: #2d2e2f solid 0.6px;
+  border-radius: 10px;
+  z-index: 7;
+}
+header .menu .prf input:checked ~ i {
+  background-color: #263951;
+  color: #228aff;
+}
+header .menu .prf input:checked ~ .drpcontent {
+  display: block;
+  z-index: 7;
+}
+header .menu .prf label .drpcontent div i {
+  line-height: 40px;
+  color: #e6e5eb;
+  margin-right: 15px;
+  font-size: 22px;
+}
+hr {
+  border-color: #3e4042;
+  margin: 0 17px;
+}
+header .menu .prf label .drpcontent div {
+  margin: 5px 15px;
+  color: #e6e5eb;
+  display: flex;
+  align-items: center;
+
+  border-radius: 10px;
+}
+header .menu .prf label .drpcontent div:hover {
+  background-color: #3a3b3c;
+}
+header .menu .prf label .drpcontent span {
+  font-size: 13px;
+  padding-left: 25px;
+  color: #a8aab1;
+}
+a,
+a:visited {
+  text-decoration: none;
+}
+/* ############### the main ##################  */
+main {
+  display: flex;
+  min-width: 100px;
+  flex-flow: column nowrap;
+  max-width: 544px;
+  height: fit-content;
+  background-color: #242526;
+  margin: auto;
+  position: relative;
+  top: 20vh;
+  border-radius: 10px;
+  align-items: center;
+  padding: 20px;
+  text-align: center;
+  justify-content: space-between;
+  z-index: -1;
+}
+main .intro {
+  width: 117px;
+  height: 120px;
+}
+main .mimg {
+  margin-top: 20px;
+  position: relative;
+}
+main .mimg .small {
+  border-radius: 50%;
+  position: absolute;
+  height: 56px;
+  width: 56px;
+  bottom: 7px;
+  right: -10px;
+  border: #242526 2px solid;
+}
+main .txt h2 {
+  margin-top: -5px;
+  font-size: 23px;
+}
+main .lock {
+  padding: 0 20px;
+  background-color: #323436;
+  border-radius: 15px;
+  position: relative;
+  text-align: left;
+}
+main .lock i {
+  border-radius: 50%;
+  font-size: 20px;
+  padding: 11px;
+}
+main .lock p {
+  margin-top: -15px;
+  color: #aaacb1;
+}
+main > span {
+  font-size: 15px;
+  text-align: left;
+  margin: 15px 0;
+}
+main > a:hover,
+.password form .sub:hover {
+  background-color: #3982e4;
+}
+main > a,
+.password form .sub {
+  background-color: #2374e1;
+  border-radius: 8px;
+  height: 36px;
+  width: 100%;
+  line-height: 36px;
+  color: #e4e6eb;
+  font-weight: 600;
+}
+@media (max-width: 500px) {
+  .password > div h4 {
+    color: #4b4f56 !important;
+  }
+  .password > div p {
+    color: #4b4f56 !important;
+  }
+  .drk {
+    display: none !important;
+  }
+  MAIN .txt h2 {
+    margin-top: 20px;
+  }
+  header {
+    display: none;
+  }
+  .phone {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    background-color: white;
+    z-index: 6;
+  }
+  .phone img,
+  .phone a {
+    margin: 10px 20px;
+    font-weight: 500;
+  }
+  body {
+    background-color: white;
+  }
+  * {
+    color: black !important;
+  }
+  .lock {
+    background-color: #f0f2f5 !important;
+  }
+  .lock i {
+    color: #6c6d81 !important;
+    background-color: transparent !important;
+  }
+  .lock h4 i {
+    color: #2374e1 !important;
+  }
+  .phone > img {
+    height: 30px;
+  }
+  main {
+    background-color: transparent;
+    top: 5vh;
+  }
+  main .mimg .small {
+    border-color: transparent;
+  }
+  main > a,
+  .password form .sub {
+    color: white !important;
+    bottom: 10px;
+    position: fixed;
+    width: 95vw;
+  }
+}
+@media (min-width: 500px) {
+  .password > div h4 {
+    color: #e4e6eb !important;
+  }
+  .password {
+    background-color: #323436 !important;
+    padding-left: 30px !important;
+  }
+  .password form div label {
+    text-align: right;
+    padding-right: 15px !important;
+  }
+  .light {
+    display: none;
+  }
+  main > hr {
+    display: none;
+  }
+  .phone {
+    display: none;
+  }
+}
+main hr {
+  margin: 16px 0px;
+  border: 0.5px #c9ccd1 solid;
+  border-top: transparent;
+  width: 100%;
+}
+main .des {
+  padding-left: 70px;
+  text-align: left;
+  position: relative;
+}
+main .des p {
+  position: relative;
+  color: #9a9da0 !important;
+}
+main .des::before {
+  height: 82%;
+  width: 2px;
+  background-color: #dadde1;
+  content: " ";
+  display: inline-block;
+  position: absolute;
+  left: 27px;
+  top: 15px;
+}
+main > .des > p > i {
+  position: absolute;
+  left: -50px;
+  top: 3px;
+  color: #dadde1 !important;
+}
+main > .des > p > .sp {
+  background-color: #6eadff !important;
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+  left: -47px;
+  box-shadow: 0 0 0 4px white, 0 0 0 6px #6eadff;
+}
+/* ####### Change password ######  */
+.password {
+  margin: auto;
+  width: 90vw;
+  padding: 6px 10px 0px;
+  background-color: #f0f2f5;
+  border-radius: 10px;
+  z-index: -1;
+  position: relative;
+  top: 150px;
+  max-width: 600px;
+}
+.password > div h4 {
+  margin-bottom: 7px;
+}
+.password > div p {
+  margin-top: 7px;
+  padding-left: 20px;
+  font-size: 14px;
+}
+.password hr {
+  border: 1px #dbdbdb solid;
+  border-bottom: transparent;
+  margin: 0;
+}
+.password form {
+  display: flex;
+  flex-flow: column nowrap;
+  padding-bottom: 5px;
+}
+.password form div {
+  height: 44px;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  position: relative;
+}
+.password form div label {
+  width: 30%;
+  display: inline-block;
+  padding: 6px 0;
+  font-weight: 600;
+  font-size: 14px;
+}
+.password form div input {
+  background: transparent;
+  border: transparent;
+  height: 95%;
+  padding-left: 15px;
+  width: 100%;
+  max-width: 300px;
+  border-radius: 5px;
+}
+.password form .err input {
+  border: red 1px solid;
+  outline: none;
+}
+.password form .err::after {
+  content: "";
+  background-image: url(images/error.png);
+  background-position: 0 -21px;
+  background-size: auto;
+  background-repeat: no-repeat;
+  display: inline-block;
+  height: 20px;
+  width: 20px;
+  position: absolute;
+  right: 30px;
+  top: 11px;
+}
+.password form > span {
+  display: none;
+  text-align: right;
+  margin: 9px 20px 0px;
+}
+.password form .err ~ span {
+  display: block !important;
+  color: red !important;
+}
+.password form .sub {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90%;
+  margin-top: 15px;
+  border: 0;
+  cursor: pointer;
+  font-size: 16px;
+}
+.mimg2 {
+  margin: auto;
+  width: fit-content;
+  position: relative;
+  top: 120px;
+  z-index: -1;
+}

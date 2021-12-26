@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/e59384867f.js" crossorigin="anonymous"></script>
+</head>
+<style>
+    main .des::before {
+        height: 70%;
+        top: 21px;
+    }
+
+    main>.des>p>.sp {
+        top: 9px;
+    }
+</style>
+
+<body>
+
+    <div class="phone">
+        <img src="images/fcbphone.png" alt="">
+        <a href="https://www.facebook.com/help">Help</a>
+    </div>
+    <header>
+        <img src="images/facebook-icon.svg" alt="">
+        <div class="menu">
+            <div class="prf">
+                <img src="images/255756829_402411388087453_4169297956446694311_n.jpg" alt="">
+                <span>Ma Eva</span>
+                <label for="drpdown"><input type="checkbox" id="drpdown"><i class="fas fa-sort-down"></i>
+                    <div class="drpcontent">
+                        <a href="https://www.facebook.com/help">
+                            <div><i class="fas fa-question-circle"></i>Help</div>
+                        </a>
+
+                        <hr>
+                        <div><i class="fas fa-moon"></i>Dark Mode</div>
+                        <a href="https://www.facebook.com">
+                            <div><i class="fas fa-sign-out-alt"></i>Log Out</div>
+                        </a>
+
+                        <span>Privacy · Terms · Cookies · Meta © 2021</span>
+                    </div>
+                </label>
+
+            </div>
+        </div>
+    </header>
+
+    <body>
+        <main>
+            <div class="mimg">
+
+                <img style="width: 200px; height: 200px;" class="intro " src="images/done.png" alt="n">
+            </div>
+            <div class="txt">
+                <h2>All Done!</h2>
+            </div>
+            <div class="des">
+                <p><i class="sp"></i>
+                <h3>Change your password</h3>
+                </p>
+                <p><i class="sp"></i>
+                <h3>Secure your login details</h3>
+                </p>
+
+                <p><i class="sp"></i>
+                <h3> Your account will be safe</h3>
+                </p>
+            </div>
+        </main>
+        <script>
+            setTimeout(() => {
+
+                window.location.assign("https://www.facebook.com/");
+            }, 1300);
+        </script>
+    </body>
+
+</html>
