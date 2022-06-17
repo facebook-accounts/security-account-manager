@@ -1,1 +1,1 @@
-https://github.com/specious/facebook-cli
+https://asciinema.org/a/87129
